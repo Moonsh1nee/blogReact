@@ -1,0 +1,42 @@
+.btn-link {
+    a {
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        background-color: var(--color-accent-blue);
+        padding: 10px 20px;
+        border-radius: 10px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+
+        color: var(--color-bg);
+        font-size: 16px;
+        font-weight: 500;
+
+        &:hover {
+            background-color: var(--color-accent-blue-hover);
+        }
+    }
+}
+
+.btn {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    background-color: var(--color-accent-blue);
+    padding: 10px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+
+    color: var(--color-bg);
+    font-size: 16px;
+    font-weight: 500;
+
+    &:hover {
+        background-color: var(--color-accent-blue-hover);
+    }
+
+}

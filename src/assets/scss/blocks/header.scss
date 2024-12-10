@@ -1,0 +1,28 @@
+.header {
+    padding: 10px 20px;
+    background-color: var(--color-block-accent);
+    border-bottom: 1px solid var(--color-border-grey);
+
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__logo {
+        &-link {
+            display: inline-flex;
+            padding: 10px 15px;
+            border-radius: 12px;
+            font-size: 24px;
+            font-weight: 700;
+            background-color: var(--color-accent-blue);
+            transition: background-color 0.3s ease-in-out;
+            color: var(--color-bg);
+
+            &:hover {
+                background-color: var(--color-accent-blue-hover);
+            }
+        }
+    }
+}

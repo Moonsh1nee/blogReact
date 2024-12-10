@@ -1,0 +1,49 @@
+// Global Variables
+
+// Container
+$container-width-xxl: 1350px;
+$container-width-xl: 1170px;
+$container-width-lg: 990px;
+$container-width-md: 750px;
+$container-width-sm: 570px;
+$container-width-xs: 100%;
+
+// Padding
+$container-padding: 15px;
+$container-padding-sm: 10px;
+$container-padding-xs: 5px;
+
+$section-padding: 60px;
+$section-padding-lg: 50px;
+$section-padding-md: 40px;
+$section-padding-sm: 30px;
+$section-padding-xs: 20px;
+
+// Font
+$font-main: "Roboto", sans-serif;
+
+:root {
+    --color-font-main: #333333;
+    --color-bg: #FFFFFF;
+    --color-block-accent: #f5f5f5;
+    --color-accent-blue: #007BFF;
+    --color-accent-orange: #FF6600;
+    --color-accent-green: #66BB6A;
+    --color-accent-light__blue: #04C2C9;
+    --color-border-grey: #E0E0E0;
+    --color-accent-blue-hover: #0056b3;
+}
+
+.dark-theme {
+    --color-font-main: #E0E0E0;
+    --color-bg: #121212;
+    --color-block-accent: #2C2C2C;
+    --color-accent-blue: #1E90FF;
+    --color-accent-orange: #FF4500;
+    --color-accent-green: #32CD32;
+    --color-accent-light__blue: #00CED1;
+    --color-bar-grey: #4B4B4B;
+    --color-bar-blue: #4682B4;
+    --color-border-grey: #606060;
+    --color-accent-blue-hover: #5AA7FF;
+}

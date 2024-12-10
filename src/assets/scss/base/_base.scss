@@ -1,0 +1,21 @@
+@use 'vars' as *;
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	background-color: var(--color-bg);
+	color: var(--color-font-main);
+	font-family: $font-main;
+	font-size: 16px;
+	font-weight: 400;
+}
+
+img {
+	display: block;
+}
+
+a {
+	color: var(--color-font-main);
+}

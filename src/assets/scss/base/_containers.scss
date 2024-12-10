@@ -1,0 +1,32 @@
+@use 'vars' as *;
+@use "mixins" as *;
+
+.container {
+	margin: 0 auto;
+	padding: 0 $container-padding;
+
+	max-width: $container-width-xxl;
+	width: 100%;
+
+	@include media-xl {
+		max-width: $container-width-xl;
+	}
+
+	@include media-lg {
+		max-width: $container-width-lg;
+	}
+
+	@include media-md {
+		max-width: $container-width-md;
+	}
+
+	@include media-sm {
+		max-width: $container-width-sm;
+		padding: 0 $container-padding-sm;
+	}
+
+	@include media-xs {
+		max-width: $container-width-xs;
+		padding: 0 $container-padding-xs;
+	}
+}
