@@ -1,5 +1,4 @@
 import {Link} from "react-router-dom";
-import '../../src/assets/scss/blocks/header.scss';
 import {ButtonLinkPost} from "./Button";
 
 const Header = () => {

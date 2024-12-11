@@ -1,0 +1,40 @@
+.filters {
+    padding: 20px;
+    background-color: var(--color-block-accent);
+    border-radius: 14px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    &__group {
+        display: flex;
+        gap: 20px;
+
+        input,
+        select {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid var(--color-border-grey);
+            border-radius: 8px;
+            font-size: 16px;
+            background-color: var(--color-bg);
+            color: var(--color-font-main);
+            outline: none;
+
+            &:focus {
+                border-color: var(--color-accent-orange);
+            }
+        }
+    }
+
+    @media (min-width: 768px) {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+
+        &__group {
+            width: 48%;
+        }
+    }
+}
