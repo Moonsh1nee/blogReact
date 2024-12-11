@@ -10,15 +10,15 @@ import AddPost from "./pages/AddPost";
 
 const router = createBrowserRouter([
     {
-        path: '/',
+        path: 'blog_react/',
         element: <Home />
     },
     {
-        path: '/posts/:id',
+        path: 'blog_react/posts/:id',
         element: <FullPost />
     },
     {
-        path: '/posts/add',
+        path: 'blog_react/posts/add',
         element: <AddPost />
     }
 ]);

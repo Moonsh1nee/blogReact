@@ -1,8 +1,10 @@
 import React, { useState } from 'react';
+import {Navigate} from "react-router-dom";
 import { useDispatch } from 'react-redux';
 import { addPost } from '../redux/postsSlice';
 import Header from "../components/Header";
 import Footer from "../components/Footer";
+
 
 const AddPost = () => {
     const dispatch = useDispatch();
@@ -12,6 +14,7 @@ const AddPost = () => {
     const [excerpt, setExcerpt] = useState('');
     const [content, setContent] = useState('');
     const [tags, setTags] = useState('');
+    const [redirect, setRedirect] = useState(false);
 
     const handleSubmit = (e) => {
         e.preventDefault();
@@ -31,7 +34,12 @@ const AddPost = () => {
         setExcerpt('');
         setContent('');
         setTags('');
+        setRedirect(true);
     };
+
+    if (redirect) {
+        return <Navigate to={'/blog_react/'} />;
+    }
 
     return (
         <>

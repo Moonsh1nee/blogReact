@@ -7,10 +7,10 @@ const Header = () => {
             <div className="container">
                 <div className="header__wrapper">
                     <div className="header__logo">
-                        <Link to={'/'} className='header__logo-link'>React Blog</Link>
+                        <Link to={'/blog_react/'} className='header__logo-link'>React Blog</Link>
                     </div>
 
-                    <ButtonLinkPost className={'btn--add-post'} link={'/posts/add'}>
+                    <ButtonLinkPost className={'btn--add-post'} link={'/blog_react/posts/add'}>
                         Add post
                     </ButtonLinkPost>
                 </div>

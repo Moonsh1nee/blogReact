@@ -38,7 +38,16 @@ const Posts = () => {
                             )}
                             <div className="post__content">
                                 <h2 className="post__title">{post.title}</h2>
-                                <p className="post__date">{post.createdAt}</p>
+                                <p className="post__date">{
+                                    new Date(post.createdAt).toLocaleDateString('ru-Ru', {
+                                        year: 'numeric',
+                                        month: 'long',
+                                        day: 'numeric',
+                                        hour: 'numeric',
+                                        minute: 'numeric',
+                                        second: 'numeric'
+                                    })
+                                }</p>
                                 <p className="post__text">{post.excerpt}</p>
                                 <div className="post__content-wrapper">
                                     <ul className="post__tags-list">
@@ -47,7 +56,7 @@ const Posts = () => {
                                         ))}
                                     </ul>
 
-                                    <ButtonLinkPost className="btn--post" link={'/posts/' + post.id}>
+                                    <ButtonLinkPost className="btn--post" link={'/blog_react/posts/' + post.id}>
                                         Read more
                                     </ButtonLinkPost>
                                 </div>
