@@ -1,7 +1,5 @@
 @use '../base/vars' as *;
 .posts {
-    padding: $section-padding 0;
-
     &__title {
         margin-bottom: 60px;
         font-size: 32px;
